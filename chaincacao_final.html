@@ -1,0 +1,1110 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChainCacao — Traçabilité blockchain café‑cacao (EUDR)</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">CC</div>
+        <div class="logo-text">ChainCacao</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#problem">Problème</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#actors">Acteurs</a></li>
+        <li><a href="#eudr">EUDR</a></li>
+        <!--<li><a href="#faq">FAQ</a></li>-->
+        <li><a href="#contact" class="nav-pill">Commencer</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO avec vidéo de fond -->
+  <section class="hero" id="home">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline
+        poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231B4332;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23C8860A;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230A0F0D;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1920' height='1080' fill='url(%23grad)'/%3E%3C/svg%3E">
+        <source src="hero-cacao.mp4" type="video/mp4">
+      </video>
+      <!-- Image de secours si la vidéo n'est pas présente -->
+      <div class="fallback-bg"></div>
+    </div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">
+          <div class="live"></div><span>Plateforme de traçabilité café-cacao · Togo</span>
+        </div>
+        <h1>Traçabilité <em>blockchain</em><br>café‑cacao,<br>du champ à l'Europe</h1>
+        <p class="hero-desc">Enregistrez chaque lot (GPS, poids, photos), transférez la propriété entre acteurs,
+          vérifiez l'historique via QR code, et générez automatiquement des certificats EUDR et preuves
+          cryptographiques.</p>
+        <div class="hero-actions">
+          <a href="#solution" class="btn btn-primary">Découvrir la solution</a>
+          <a href="#eudr" class="btn btn-ghost">Conformité EUDR</a>
+        </div>
+        <div class="hero-badges">
+          <!--<div class="badge-pill">Identification unique des lots</div>
+          <div class="badge-pill">Vérification par QR code</div>
+          <div class="badge-pill">Preuves de conformité EUDR</div>
+          <div class="badge-pill">Registre blockchain immuable</div>-->
+        </div>
+      </div>
+      <!--<div class="hero-visual">
+        <div class="glass-card">
+          <div class="gc-label">Lot actif — Traçabilité temps réel</div>
+          <div class="lot-row">
+            <div>
+              <div class="lot-id">LOT-2026-0841</div>
+              <div class="lot-meta">Kpalimé, Région Plateaux · 203 kg · Criollo</div>
+            </div>
+            <div class="eudr-chip"><i class="fa-solid fa-circle-check"></i> EUDR OK</div>
+          </div>
+          <div class="chain-row">
+            <div class="chain-step">
+              <div class="cs-dot done">PR</div>
+              <div class="cs-name">Ferme</div>
+            </div>
+            <div class="chain-sep">→</div>
+            <div class="chain-step">
+              <div class="cs-dot done">CO</div>
+              <div class="cs-name">Coop.</div>
+            </div>
+            <div class="chain-sep">→</div>
+            <div class="chain-step">
+              <div class="cs-dot active">TR</div>
+              <div class="cs-name">Transform.</div>
+            </div>
+            <div class="chain-sep">→</div>
+            <div class="chain-step">
+              <div class="cs-dot pending">EX</div>
+              <div class="cs-name">Export</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="stat-trio">
+            <div class="st-item">
+              <div class="st-val">40k</div>
+              <div class="st-lbl">Familles togolaises</div>
+            </div>
+            <div class="st-item">
+              <div class="st-val">100%</div>
+              <div class="st-lbl">Conforme EUDR</div>
+            </div>
+            <div class="st-item">
+              <div class="st-val">0</div>
+              <div class="st-lbl">Fraude détectable</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="gc-label">Blocs blockchain — Immuables</div>
+          <div class="bc-mini">
+            <div class="bc-mini-block">
+              <div class="bc-icon"><i class="fa-solid fa-file-circle-plus"></i></div>
+              <div class="bc-info">
+                <p><strong>Enregistrement</strong> · Ama Tchakpé</p><span>0x3f8a…c2d1 · 15/04/2026</span>
+              </div>
+            </div>
+            <div class="bc-mini-block">
+              <div class="bc-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="bc-info">
+                <p><strong>Transfert validé</strong> · Coop. Kpalimé</p><span>0x9e1b…a7f4 · 16/04/2026</span>
+              </div>
+            </div>
+            <div class="bc-mini-block pending">
+              <div class="bc-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="bc-info">
+                <p><strong>En cours</strong> · COTOCA Transformateur</p><span>0x2c5d…—— · 18/04/2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="sstat reveal">
+        <div class="sstat-num hl">40 000<sub>+</sub></div>
+        <div class="sstat-desc">Familles togolaises dépendant du café et du cacao</div>
+      </div>
+      <div class="sstat reveal">
+        <div class="sstat-num hl">15–25<sub>%</sub></div>
+        <div class="sstat-desc">Part perçue par l'agriculteur sur la valeur finale</div>
+      </div>
+      <div class="sstat reveal">
+        <div class="sstat-num hl">40M<sub>$</sub></div>
+        <div class="sstat-desc">Pertes annuelles dues aux fraudes sur les pesées</div>
+      </div>
+      <div class="sstat reveal">
+        <div class="sstat-num hl">&lt;5<sub>%</sub></div>
+        <div class="sstat-desc">Exportations certifiées Fairtrade ou Bio</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERIE D'IMAGES -->
+  <section class="section" style="padding-bottom:0">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">La réalité du terrain</div>
+        <div class="s-title">La filière café‑cacao togolaise<br>en images</div>
+      </div>
+      <div class="gallery-strip reveal">
+        <div class="gallery-wrap">
+          <img class="gallery-img"
+            src="https://images.pexels.com/photos/7469453/pexels-photo-7469453.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Cabosses de cacao sur l'arbre"
+            onerror="this.src='https://placehold.co/400x500/2D6A4F/B7E4C7?text=Cacao+Pods'">
+          <div class="gallery-caption">Cabosses de cacao, Togo</div>
+        </div>
+        <div class="gallery-wrap">
+          <img class="gallery-img" src="Images/agriculteur.jpg" alt="Agriculteur africain"
+            onerror="this.src='https://placehold.co/400x500/40916C/D8F3DC?text=Agriculteur'">
+          <div class="gallery-caption">Agriculteur — Région Plateaux</div>
+        </div>
+        <div class="gallery-wrap">
+          <img class="gallery-img" src="Images/sechage.jpg" alt="Fèves de cacao"
+            onerror="this.src='https://placehold.co/400x500/1B4332/74C69D?text=Cacao+Beans'">
+          <div class="gallery-caption">Fèves de cacao — Séchage</div>
+        </div>
+        <div class="gallery-wrap">
+          <img class="gallery-img" src="Images/lots.jpg" alt="Coopérative agricole Afrique"
+            onerror="this.src='https://placehold.co/400x500/D4A017/FDE68A?text=Cooperative'">
+          <div class="gallery-caption">Coopérative — Transfert de lot</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLÈME -->
+  <section class="section problem" id="problem">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Le problème</div>
+        <div class="s-title">Sans preuves, la traçabilité devient<br>une promesse…pas une garantie.</div>
+        <div class="s-sub">La filière café‑cacao a besoin d'un registre fiable pour relier chaque lot à sa parcelle,
+          suivre les transferts de propriété et produire des preuves EUDR vérifiables — sans alourdir le travail sur le
+          terrain.</div>
+      </div>
+      <div class="prob-grid">
+        <div>
+          <div class="chain-visual reveal">
+            <div class="cv-title">Parcours d'un sac de cacao — Aujourd'hui</div>
+            <div class="cv-step">
+              <div class="cv-dot" style="background:var(--g6)"><i class="fa-solid fa-seedling"></i></div>
+              <div class="cv-content">
+                <h5>Agriculteur — Récolte</h5>
+                <p>Vend à un collecteur. Aucune preuve d'origine ni de poids vérifiable.</p>
+              </div>
+            </div>
+            <div class="cv-step">
+              <div class="cv-dot" style="background:#FEF3C7"><i class="fa-solid fa-arrows-rotate"></i></div>
+              <div class="cv-content">
+                <h5>4 à 6 intermédiaires non tracés</h5>
+                <p>Collecteurs, pisteurs, grossistes — chacun revend sans enregistrement. Fraudes indétectables.</p>
+              </div>
+            </div>
+            <div class="cv-step">
+              <div class="cv-dot" style="background:#DBEAFE"><i class="fa-solid fa-ship"></i></div>
+              <div class="cv-content">
+                <h5>Exportateur — Sortie du Togo</h5>
+                <p>Impossible de fournir une preuve géographique à l'UE. Blocage EUDR en vue.</p>
+              </div>
+            </div>
+            <div class="cv-step">
+              <div class="cv-dot" style="background:#FEE2E2"><i class="fa-solid fa-earth-europe"></i></div>
+              <div class="cv-content">
+                <h5>Importateur européen</h5>
+                <p>Refuse les lots non conformes EUDR depuis 2025. Marché en danger pour le Togo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prob-cards reveal">
+          <div class="prob-card">
+            <div class="prob-card-icon pi-red"><i class="fa-solid fa-circle-exclamation"></i></div>
+            <div>
+              <h4>Manque de preuves exploitables</h4>
+              <p>Données terrain dispersées, impossibles à auditer. Moins de 5 % des exports certifiés.</p>
+            </div>
+          </div>
+          <div class="prob-card">
+            <div class="prob-card-icon pi-gold"><i class="fa-solid fa-link"></i></div>
+            <div>
+              <h4>Ruptures de traçabilité</h4>
+              <p>Les transferts entre acteurs perdent l'historique. L'EUDR (2025) impose la traçabilité géographique.
+              </p>
+            </div>
+          </div>
+          <div class="prob-card">
+            <div class="prob-card-icon pi-blue"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div>
+              <h4>Fraudes et non‑conformité</h4>
+              <p>Pesées frauduleuses : 30–40 M$ de pertes par an. Sans preuves, l'accès au marché UE est bloqué.</p>
+            </div>
+          </div>
+          <div class="prob-card">
+            <div class="prob-card-icon pi-green"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h4>Perte de valeur pour les producteurs</h4>
+              <p>40 000 familles touchées. L'agriculteur ne perçoit que 15–25 % de la valeur finale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE PLEINE LARGEUR 1 -->
+  <div class="full-img-section">
+    <!--
+    IMAGE : https://www.pexels.com/photo/cocoa-plantation-7469550/
+    Télécharge et renomme en "cacao-field.jpg"
+  -->
+    <img src="Images/grain.jpg" alt="Plantation de cacao Afrique de l'Ouest"
+      onerror="this.src='https://placehold.co/1920x480/1B4332/B7E4C7?text=Plantation+de+Cacao'">
+    <div class="full-img-overlay">
+      <div class="full-img-text">
+        <div class="s-eyebrow">Notre mission</div>
+        <div class="s-title">Relier chaque grain<br>à son histoire</div>
+        <div class="s-sub">ChainCacao crée une infrastructure de confiance qui relie chaque cabosse de cacao à une
+          preuve cryptographique vérifiable par n'importe qui, partout dans le monde.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOLUTION -->
+  <section class="section" id="solution">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">La solution fiable</div>
+        <div class="s-title">De la parcelle à l'importateur européen —<br><span
+            style="color:var(--g2)">ChainCacao</span> : une chaîne de valeur</div>
+        <div class="s-sub">Chaque étape devient une preuve consultable. De la parcelle togolaise jusqu'à l'importateur
+          européen, ChainCacao relie les acteurs et sécurise la conformité EUDR 2025.</div>
+      </div>
+      <div class="sol-grid">
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/6194369/pexels-photo-6194369.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="GPS farm" onerror="this.src='https://placehold.co/600x160/D8F3DC/2D6A4F?text=GPS+Enregistrement'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-g"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Enregistrement de récolte</h3>
+            <p>Création d'un lot depuis la parcelle avec GPS, poids, type de produit et photos. Chaque récolte devient
+              une preuve vérifiable et immuable.</p>
+          </div>
+        </div>
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/7469550/pexels-photo-7469550.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Transfert coopérative"
+            onerror="this.src='https://placehold.co/600x160/FEF3C7/92400E?text=Transfert+Cooperat.'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-gold"><i class="fa-solid fa-right-left"></i></div>
+            <h3>Transfert à la coopérative</h3>
+            <p>Signature numérique du transfert de propriété avec horodatage et pièces justificatives pour éliminer les
+              fraudes.</p>
+          </div>
+        </div>
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="QR code vérification"
+            onerror="this.src='https://placehold.co/600x160/DBEAFE/1D4ED8?text=Controle+QR+Code'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-blue"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Contrôle par l'importateur</h3>
+            <p>Consultation instantanée de l'historique complet via QR code ou identifiant unique, avant achat ou
+              dédouanement en Europe.</p>
+          </div>
+        </div>
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/4057743/pexels-photo-4057743.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Regroupement lots"
+            onerror="this.src='https://placehold.co/600x160/D8F3DC/2D6A4F?text=Regroupement+Lots'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-g"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3>Regroupement de lots</h3>
+            <p>Création de lots regroupés tout en conservant la traçabilité individuelle des lots sources, garantissant
+              conformité EUDR et certifications.</p>
+          </div>
+        </div>
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/6868656/pexels-photo-6868656.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Certification Fairtrade"
+            onerror="this.src='https://placehold.co/600x160/FEF3C7/92400E?text=Certifications'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-gold"><i class="fa-solid fa-award"></i></div>
+            <h3>Accès aux certifications</h3>
+            <p>La traçabilité prouvée ouvre l'accès aux certifications Fairtrade, Bio et Rainforest Alliance, permettant
+              de valoriser davantage le cacao togolais.</p>
+          </div>
+        </div>
+        <div class="sol-card reveal">
+          <img class="sol-card-img"
+            src="https://images.pexels.com/photos/7567565/pexels-photo-7567565.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Dashboard digital"
+            onerror="this.src='https://placehold.co/600x160/DBEAFE/1D4ED8?text=Tableau+de+Bord'">
+          <div class="sol-card-body">
+            <div class="sol-icon si-blue"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Tableaux de bord dédiés</h3>
+            <p>Interface adaptée à chaque acteur — agriculteur, coopérative, transformateur, exportateur — avec vue
+              temps réel sur tous les lots.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAS D'USAGE -->
+  <section class="section use-cases" id="use-cases">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Cas d'usage</div>
+        <div class="s-title">ChainCacao en action</div>
+        <div class="s-sub">Explorez les flux concrets pour chaque acteur de la filière, de l'enregistrement sur le
+          terrain à la vérification en Europe.</div>
+      </div>
+      <div class="uc-tabs">
+        <button class="uc-tab active" onclick="showUC('agri',this)">Agriculteur</button>
+        <button class="uc-tab" onclick="showUC('coop',this)">Coopérative</button>
+        <button class="uc-tab" onclick="showUC('export',this)">Exportateur</button>
+        <button class="uc-tab" onclick="showUC('verif',this)">Vérificateur</button>
+      </div>
+      <div id="uc-agri" class="uc-content active">
+        <div class="uc-steps">
+          <div class="uc-step">
+            <div class="uc-num">1</div>
+            <div>
+              <h4>Capture GPS automatique</h4>
+              <p>L'agriculteur ouvre l'app depuis sa parcelle. Les coordonnées GPS sont capturées automatiquement, même
+                hors-ligne.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">2</div>
+            <div>
+              <h4>Saisie du lot</h4>
+              <p>Espèce, poids, date, photos optionnelles. Interface pensée pour les zones à faible connectivité.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">3</div>
+            <div>
+              <h4>Inscription blockchain</h4>
+              <p>Le lot est signé cryptographiquement et inscrit sur la blockchain. Un QR code unique est généré.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">4</div>
+            <div>
+              <h4>Suivi des revenus</h4>
+              <p>L'agriculteur peut suivre en temps réel les transferts et la valeur générée à chaque étape.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-visual">
+          <div class="uc-screen-title">Interface agriculteur — Enregistrement</div>
+          <div class="mock-field">
+            <div class="mock-label">Position GPS</div>
+            <div class="mock-input">GPS: 6.1722° N, 1.2347° E — Plateaux ✓</div>
+          </div>
+          <div class="mock-field">
+            <div class="mock-label">Espèce</div>
+            <div class="mock-input">Cacao Forastero</div>
+          </div>
+          <div class="mock-field">
+            <div class="mock-label">Poids (kg)</div>
+            <div class="mock-input">148 kg</div>
+          </div>
+          <div class="mock-field">
+            <div class="mock-label">Date</div>
+            <div class="mock-input">16 avril 2026</div>
+          </div>
+          <div class="mock-btn">Enregistrer sur la blockchain</div>
+        </div>
+      </div>
+      <div id="uc-coop" class="uc-content">
+        <div class="uc-steps">
+          <div class="uc-step">
+            <div class="uc-num">1</div>
+            <div>
+              <h4>Réception du lot</h4>
+              <p>Scan du QR code pour consulter l'historique complet depuis la ferme avant réception.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">2</div>
+            <div>
+              <h4>Validation de la pesée</h4>
+              <p>Pesée officielle enregistrée et comparée à la déclaration. Toute divergence est tracée.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">3</div>
+            <div>
+              <h4>Signature du transfert</h4>
+              <p>Transfert de propriété signé numériquement par les deux parties, horodaté de façon immuable.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">4</div>
+            <div>
+              <h4>Tableau de bord</h4>
+              <p>Vue d'ensemble de tous les lots reçus, en cours et expédiés avec alertes de non-conformité.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-visual">
+          <div class="uc-screen-title">Interface coopérative — Lots en cours</div>
+          <div class="mock-timeline">
+            <div class="mt-item">
+              <div class="mt-dot g"></div>
+              <div class="mt-text">
+                <p>LOT-2026-0841 — 203 kg · Ama Tchakpé</p><small>Pesée validée · 16/04/2026</small>
+              </div>
+            </div>
+            <div class="mt-item">
+              <div class="mt-dot gold"></div>
+              <div class="mt-text">
+                <p>LOT-2026-0842 — 148 kg en attente · Kofi Mensah</p><small>Pesée à confirmer · 17/04/2026</small>
+              </div>
+            </div>
+            <div class="mt-item">
+              <div class="mt-dot g"></div>
+              <div class="mt-text">
+                <p>LOT-2026-0839 — 310 kg expédiés · Ameko Fiafé</p><small>Transfert signé → COTOCA · 15/04/2026</small>
+              </div>
+            </div>
+          </div>
+          <div class="mock-btn" style="margin-top:16px">Valider les lots en attente</div>
+        </div>
+      </div>
+      <div id="uc-export" class="uc-content">
+        <div class="uc-steps">
+          <div class="uc-step">
+            <div class="uc-num">1</div>
+            <div>
+              <h4>Consolidation de lots</h4>
+              <p>Regroupement de plusieurs lots avec traçabilité individuelle conservée pour l'EUDR.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">2</div>
+            <div>
+              <h4>Vérification de conformité</h4>
+              <p>Contrôle automatique : GPS hors zones déforestées, tous les transferts signés.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">3</div>
+            <div>
+              <h4>Génération du certificat EUDR</h4>
+              <p>Rapport de due diligence généré avec toutes les preuves cryptographiques requises.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">4</div>
+            <div>
+              <h4>Transmission à l'importateur</h4>
+              <p>L'importateur reçoit le QR code et le rapport EUDR, vérification possible en temps réel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-visual">
+          <div class="uc-screen-title">Interface exportateur — EXPORT-2026-04A</div>
+          <div class="mock-field">
+            <div class="mock-label">Lots consolidés</div>
+            <div class="mock-input">5 lots · 1 240 kg · Région Plateaux</div>
+          </div>
+          <div class="mock-field">
+            <div class="mock-label">Conformité EUDR</div>
+            <div class="mock-input">✓ 5/5 lots conformes — 100%</div>
+          </div>
+          <div class="mock-field">
+            <div class="mock-label">Preuve cryptographique</div>
+            <div class="mock-input" style="font-family:monospace;font-size:11px">0xd4e2f8a1b3c7…9e5f ✓</div>
+          </div>
+          <div class="mock-btn">Télécharger rapport EUDR complet</div>
+        </div>
+      </div>
+      <div id="uc-verif" class="uc-content">
+        <div class="uc-steps">
+          <div class="uc-step">
+            <div class="uc-num">1</div>
+            <div>
+              <h4>Scan du QR code</h4>
+              <p>Importateur, certifié ou régulateur scanne le QR code collé sur le sac ou le conteneur.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">2</div>
+            <div>
+              <h4>Historique instantané</h4>
+              <p>L'historique complet s'affiche : chaque transfert, acteur, horodatage depuis la ferme.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">3</div>
+            <div>
+              <h4>Vérification cryptographique</h4>
+              <p>Chaque bloc vérifié par signature — impossible à falsifier même avec accès à la base.</p>
+            </div>
+          </div>
+          <div class="uc-step">
+            <div class="uc-num">4</div>
+            <div>
+              <h4>Export du rapport</h4>
+              <p>Rapport PDF de traçabilité généré, acceptable pour les organismes de certification.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-visual">
+          <div class="uc-screen-title">Interface vérificateur — LOT-2026-0841</div>
+          <div class="mock-timeline">
+            <div class="mt-item">
+              <div class="mt-dot g"></div>
+              <div class="mt-text">
+                <p>Récolte · Ama Tchakpé · 203 kg Criollo</p><small>GPS: 6.17°N 1.23°E · GPS prouvé · 15/04/2026</small>
+              </div>
+            </div>
+            <div class="mt-item">
+              <div class="mt-dot g"></div>
+              <div class="mt-text">
+                <p>Coop. Kpalimé Nord · Pesée : 203 kg ✓</p><small>Transfert signé cryptographiquement ·
+                  16/04/2026</small>
+              </div>
+            </div>
+            <div class="mt-item">
+              <div class="mt-dot gold"></div>
+              <div class="mt-text">
+                <p>Transformateur COTOCA · En cours</p><small>18/04/2026</small>
+              </div>
+            </div>
+            <div class="mt-item">
+              <div class="mt-dot gray"></div>
+              <div class="mt-text">
+                <p>Exportateur · En attente</p><small>—</small>
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-top:14px;background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);border-radius:8px;padding:10px;font-size:12px;color:#6EE7B7;font-weight:600;text-align:center">
+            ✓ Traçabilité complète vérifiée — Conforme EUDR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGE avec image fond -->
+  <div class="testimony">
+    <div class="testimony-bg">
+      <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        alt="Agriculteur Afrique" onerror="this.src='https://placehold.co/1920x400/1B4332/74C69D?text=Temoignage'">
+      <div style="position:absolute;inset:0;background:rgba(10,15,13,.75)"></div>
+    </div>
+    <div class="testimony-inner">
+      <div class="quote-icon">"</div>
+      <div class="testimony-text">Avec ChainCacao, je sais enfin ce que vaut mon cacao sur le marché européen. Pour la
+        première fois, j'ai une preuve de ce que j'ai récolté.</div>
+      <div class="testimony-author">
+        <div class="author-dot"></div>Kofi Mensah, agriculteur · Kpalimé, Région Plateaux<div class="author-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EUDR -->
+  <section class="section eudr-section" id="eudr">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Conformité EUDR</div>
+        <div class="s-title">Le règlement européen<br>anti-déforestation · En vigueur 2025</div>
+        <div class="s-sub">Tout cacao importé dans l'UE doit être accompagné de preuves géographiques vérifiables.
+          ChainCacao génère automatiquement ces preuves.</div>
+      </div>
+      <div class="eudr-grid">
+        <div class="eudr-steps reveal">
+          <div class="eudr-step">
+            <div class="eudr-step-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Géolocalisation des parcelles</h4>
+              <p>Chaque lot est associé à des coordonnées GPS précises, enregistrées à la récolte via l'app mobile.</p>
+            </div>
+          </div>
+          <div class="eudr-step">
+            <div class="eudr-step-icon"><i class="fa-solid fa-link"></i></div>
+            <div>
+              <h4>Historique de transferts complet</h4>
+              <p>Tous les changements de propriété enregistrés de façon immuable sur la blockchain, de la ferme à
+                l'exportateur.</p>
+            </div>
+          </div>
+          <div class="eudr-step">
+            <div class="eudr-step-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>Preuves cryptographiques</h4>
+              <p>Chaque bloc signé numériquement — impossible à falsifier. Vérification instantanée via QR code par tout
+                importateur.</p>
+            </div>
+          </div>
+          <div class="eudr-step">
+            <div class="eudr-step-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div>
+              <h4>Génération automatique du rapport</h4>
+              <p>Rapport de due diligence EUDR généré depuis les données blockchain, prêt pour le dédouanement européen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="eudr-cert reveal">
+          <div class="cert-header">
+            <div class="cert-title"><i class="fa-solid fa-earth-europe"></i> Certificat EUDR — ChainCacao</div>
+            <div class="cert-ok"><i class="fa-solid fa-circle-check"></i> Conforme</div>
+          </div>
+          <div class="cert-rows">
+            <div class="cert-row"><span class="cert-row-key">Identifiant lot</span><span
+                class="cert-row-val">LOT-2026-0841</span></div>
+            <div class="cert-row"><span class="cert-row-key">Produit</span><span class="cert-row-val">Cacao Criollo ·
+                203 kg</span></div>
+            <div class="cert-row"><span class="cert-row-key">Parcelle GPS</span><span class="cert-row-val">6.1722°N ·
+                1.2347°E</span></div>
+            <div class="cert-row"><span class="cert-row-key">Zone déforestée ?</span><span class="cert-check">Non
+                confirmé</span></div>
+            <div class="cert-row"><span class="cert-row-key">Agriculteur</span><span class="cert-row-val">Ama Tchakpé ·
+                Kpalimé</span></div>
+            <div class="cert-row"><span class="cert-row-key">Transferts tracés</span><span class="cert-check">4 / 4
+                signés</span></div>
+            <div class="cert-row"><span class="cert-row-key">Blockchain</span><span class="cert-row-val">Polygon · Bloc
+                #4823</span></div>
+            <div class="cert-row"><span class="cert-row-key">Date émission</span><span class="cert-row-val">22 avril
+                2026</span></div>
+          </div>
+          <div class="cert-footer">
+            <div class="cert-hash"><span>Hash :</span> 0x2c5de8b3f1a9740c…4f2e9d1b8a3c6f</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTEURS -->
+  <section class="section" id="actors">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Acteurs de la filière</div>
+        <div class="s-title">Une solution pour chaque maillon<br>de la filière café-cacao togolaise</div>
+      </div>
+      <div class="actors-grid">
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,var(--g7),#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-seedling"></i></span>
+            <div>
+              <h3>Agriculteurs & Coopératives</h3>
+              <p class="actor-example">Ex : Koffi Mensah (Kpalimé) · CACAOKPALIME</p>
+            </div>
+          </div>
+          <p>Enregistrent les lots à la récolte avec GPS, poids et photos via une application mobile optimisée pour
+            zones à connectivité réduite. Reçoivent le certificat de récolte immédiatement.</p>
+          <span class="actor-tag tag-green">Producteur</span>
+        </div>
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,#EFF6FF,#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-people-arrows"></i></span>
+            <div>
+              <h3>Coopératives & Collecteurs</h3>
+              <p class="actor-example">Ex : CACAOKPALIME · Région Plateaux</p>
+            </div>
+          </div>
+          <p>Collectent les lots, valident les transferts et confirment les pesées. Génèrent les registres audit
+            immuables. Chaque transaction est horodatée et signée numériquement.</p>
+          <span class="actor-tag tag-gold">Intermédiaire</span>
+        </div>
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,#FEF3C7,#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-industry"></i></span>
+            <div>
+              <h3>Transformateurs</h3>
+              <p class="actor-example">Ex : COTOCA Transformation · Lissé</p>
+            </div>
+          </div>
+          <p>Reçoivent les lots avec historique complet vérifiable. Ajoutent les étapes de fermentation, séchage et
+            contrôle qualité. Preuves cryptographiques conservées à chaque transformation.</p>
+          <span class="actor-tag tag-blue">Transformateur</span>
+        </div>
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,#F5F3FF,#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-truck-fast"></i></span>
+            <div>
+              <h3>Exportateurs</h3>
+              <p class="actor-example">Ex : TOGO EXPORT · Port d'Atakoramé</p>
+            </div>
+          </div>
+          <p>Consolident les lots regroupés, génèrent automatiquement les rapports EUDR et certificats. Maintiennent la
+            traçabilité jusqu'au port. Facilitent la vérification par importateurs européens.</p>
+          <span class="actor-tag tag-purple">Exportateur</span>
+        </div>
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,#FFF7ED,#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-certificate"></i></span>
+            <div>
+              <h3>Organismes de certification</h3>
+              <p class="actor-example">Fairtrade, Bio, Rainforest Alliance</p>
+            </div>
+          </div>
+          <p>Accèdent à la chaîne complète vérifiable pour délivrer certifications. Audits simplifiés grâce aux preuves
+            cryptographiques. Réduction des temps de certification de 40 %.</p>
+          <span class="actor-tag tag-gold">Certification</span>
+        </div>
+        <div class="actor-card reveal" style="background:linear-gradient(135deg,var(--g7),#fff)">
+          <div class="actor-header">
+            <span class="actor-emoji"><i class="fa-solid fa-earth-europe"></i></span>
+            <div>
+              <h3>Importateurs européens</h3>
+              <p class="actor-example">Ex : CHOCO HOLLAND BV</p>
+            </div>
+          </div>
+          <p>Vérifient l'historique complet d'un lot en un scan QR. Consultent les preuves EUDR, GPS et documents avant
+            achat. Conformité anti-déforestation garantie avant mise sur le marché.</p>
+          <span class="actor-tag tag-green">Importateur</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVANTAGES -->
+  <section class="section benefits">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Avantages</div>
+        <div class="s-title">Transformer la vie de<br>40 000 familles togolaises</div>
+      </div>
+      <div class="ben-grid">
+        <div class="ben-card reveal">
+          <h3>Impact économique</h3>
+          <ul class="ben-list">
+            <li>Réduction des fraudes sur les pesées</li>
+            <li>Augmentation de la part captée par les agriculteurs</li>
+            <li>Accès aux marchés premium Fairtrade et Bio</li>
+            <li>Négociation sur données vérifiables</li>
+          </ul>
+        </div>
+        <div class="ben-card reveal">
+          <h3>Impact réglementaire</h3>
+          <ul class="ben-list">
+            <li>Conformité totale avec l'EUDR 2025</li>
+            <li>Maintien des exportations vers l'UE</li>
+            <li>Togo pionnier régional en Afrique de l'Ouest</li>
+            <li>Modèle réplicable pour pays voisins</li>
+          </ul>
+        </div>
+        <div class="ben-card reveal">
+          <h3>Impact social</h3>
+          <ul class="ben-list">
+            <li>Amélioration de vie des 40 000 familles</li>
+            <li>Renforcement du pouvoir des coopératives</li>
+            <li>Transparence et justice dans la filière</li>
+            <li>Applicable au coton, cajou, soja</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE PLEINE LARGEUR 2 -->
+  <div class="full-img-section">
+    <img src="https://images.pexels.com/photos/6194637/pexels-photo-6194637.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      alt="Blockchain agriculture"
+      onerror="this.src='https://placehold.co/1920x480/0A0F0D/74C69D?text=Blockchain+Agriculture'">
+    <div class="full-img-overlay">
+      <div class="full-img-text">
+        <div class="s-eyebrow">Technologie blockchain</div>
+        <div class="s-title">Un registre immuable<br>sans tiers de confiance</div>
+        <div class="s-sub">La blockchain garantit que chaque donnée enregistrée est permanente, vérifiable et accessible
+          à tous les acteurs de la filière — sans intermédiaire centralisé.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOCKCHAIN -->
+  <section class="section" id="blockchain">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Pourquoi la blockchain ?</div>
+        <div class="s-title">La technologie au service<br>de la transparence agricole</div>
+        <div class="s-sub">La blockchain est la seule technologie permettant à des acteurs qui ne se font pas confiance
+          de partager des données vérifiables et non falsifiables.</div>
+      </div>
+      <div class="bc-grid">
+        <div class="bc-reasons reveal">
+          <div class="bc-reason">
+            <div class="bc-reason-icon"><i class="fa-solid fa-lock"></i></div>
+            <div>
+              <h4>Immuabilité garantie</h4>
+              <p>Un lot enregistré ne peut jamais être modifié rétroactivement. Chaque bloc est lié cryptographiquement
+                au précédent.</p>
+            </div>
+          </div>
+          <div class="bc-reason">
+            <div class="bc-reason-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div>
+              <h4>Décentralisation totale</h4>
+              <p>Aucun acteur unique ne contrôle le registre. Tous partagent la même source de vérité sans dépendre d'un
+                tiers.</p>
+            </div>
+          </div>
+          <div class="bc-reason">
+            <div class="bc-reason-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div>
+              <h4>Vérifiabilité universelle</h4>
+              <p>N'importe qui peut vérifier l'authenticité d'un lot sans accès privilégié — importateur, journaliste,
+                régulateur.</p>
+            </div>
+          </div>
+          <div class="bc-reason">
+            <div class="bc-reason-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <h4>Accessibilité terrain</h4>
+              <p>Mode hors-ligne pour zones à faible connectivité. Synchronisation différée dès que le réseau est
+                disponible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bc-visual-panel reveal">
+          <div class="bc-block">
+            <div class="bc-block-h">
+              <div class="bc-block-title">Bloc #4821 — Récolte</div>
+              <div class="bc-hash">0x3f8a…c2d1</div>
+            </div>
+            <div class="bc-data"><strong>Agriculteur :</strong> Kofi Mensah · <strong>GPS :</strong> 6.17°N
+              1.23°E<br><strong>Espèce :</strong> Forastero · <strong>Poids :</strong> 148 kg · 16/04/2026</div>
+            <div class="bc-link">
+              <div class="bc-link-dot"></div><code>prev: 0x0000…0000</code>
+            </div>
+          </div>
+          <div class="bc-arrow-d">↓</div>
+          <div class="bc-block">
+            <div class="bc-block-h">
+              <div class="bc-block-title">Bloc #4822 — Transfert Coopérative</div>
+              <div class="bc-hash">0x9e1b…a7f4</div>
+            </div>
+            <div class="bc-data"><strong>Récepteur :</strong> Coop. Kpalimé Nord<br><strong>Pesée confirmée :</strong>
+              148 kg · Signé ✓</div>
+            <div class="bc-link">
+              <div class="bc-link-dot"></div><code>prev: 0x3f8a…c2d1 ✓</code>
+            </div>
+          </div>
+          <div class="bc-arrow-d">↓</div>
+          <div class="bc-block">
+            <div class="bc-block-h">
+              <div class="bc-block-title">Bloc #4823 — Transformateur</div>
+              <div class="bc-hash">0x2c5d…e8b3</div>
+            </div>
+            <div class="bc-data"><strong>COTOCA</strong> · En cours de traitement<br><span
+                style="color:var(--g2);font-weight:500">Donnée immuable — Modification impossible</span></div>
+            <div class="bc-link">
+              <div class="bc-link-dot"></div><code>prev: 0x9e1b…a7f4 ✓</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- SECTION VALEURS -->
+  <section class="section" id="values">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Nos valeurs</div>
+        <div class="s-title">Préserver les forêts<br>et la biodiversité</div>
+        <div class="s-sub">Chaque traçabilité vérifiée garantit que le cacao provient de terres légales, sans
+          déforestation ni exploitation.</div>
+      </div>
+      <div class="values-grid">
+        <div class="value-img reveal">
+          <img src="https://images.pexels.com/photos/4050301/pexels-photo-4050301.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Forêts et biodiversité"
+            onerror="this.src='https://placehold.co/600x400/1B4332/74C69D?text=Forêts+Biodiversité'">
+        </div>
+        <div class="value-list">
+          <div class="value-item reveal">
+            <div class="value-icon"><i class="fa-solid fa-earth-europe"></i></div>
+            <div>
+              <h4>Durabilité environnementale</h4>
+              <p>Chaque lot tracé garantit l'absence de déforestation. Preuves GPS et photos vérifiables intégrées.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-icon"><i class="fa-solid fa-people-group"></i></div>
+            <div>
+              <h4>Justice économique</h4>
+              <p>Les 40 000 familles togolaises reçoivent une part plus équitable en supprimant les intermédiaires
+                frauduleux.</p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+              <h4>Transparence totale</h4>
+              <p>De la parcelle à l'importateur : chacun voit l'histoire complète. Aucun secret, aucune fraude possible.
+              </p>
+            </div>
+          </div>
+          <div class="value-item reveal">
+            <div class="value-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+              <h4>Innovation accessible</h4>
+              <p>Technologie blockchain simplifiée pour zones à faible connectivité. Application mobile hors-ligne.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FAQ -->
+  <!--<section class="section" id="faq">
+    <div class="si">
+      <div class="s-head reveal">
+        <div class="s-eyebrow">Questions fréquentes</div>
+        <div class="s-title">Trouvez les réponses<br>aux questions les plus posées</div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>Comment ChainCacao assure la traçabilité d'un lot ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Chaque lot est enregistré avec GPS, poids, photos et identité du producteur. À chaque transfert de
+              propriété (agriculteur → coopérative → transformateur → exportateur), une transaction immuable est créée.
+              L'importateur européen scanne un QR code et consulte l'historique complet instantanément.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>En quoi cela aide pour l'EUDR (anti-déforestation) ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>L'EUDR impose une traçabilité géographique obligatoire dès 2025. ChainCacao génère automatiquement
+              certificats et preuves cryptographiques (photos, GPS, documents). Chaque lot est lié à sa parcelle
+              d'origine. Aucune déforestation n'est possible car les preuves sont vérifiables par tous.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>Peut-on regrouper des lots sans perdre la traçabilité ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Oui. Les coopératives peuvent regrouper plusieurs lots tout en conservant l'historique de chaque lot
+              source. La traçabilité est conservée intégralement — chaque lot regroupé reste traçable jusqu'à sa
+              parcelle originelle.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>Comment un importateur européen vérifie-t-il l'historique ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>L'importateur scanne le QR code sur le lot ou rentre l'identifiant unique. Il voit instantanément : lieu
+              d'origine, photos GPS, dates de chaque transfert, signatures numériques de tous les acteurs, certificats
+              de conformité EUDR. Aucun intermédiaire n'est nécessaire.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>La plateforme couvre café ET cacao ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Actuellement, ChainCacao est optimisée pour le cacao. L'architecture est réplicable pour café, coton,
+              cajou et soja — tout produit agricole qui bénéficie de traçabilité immuable et vérification par
+              importateurs.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question reveal" onclick="toggleFaq(this)">
+            <span>Quel niveau de technologie est requis sur le terrain ?</span>
+            <span class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Une simple application mobile sur smartphone. L'app fonctionne en mode hors-ligne — aucune connexion
+              Internet requise pendant l'enregistrement. Les données se synchronisent automatiquement lorsque le signal
+              revient. Pas de formation technique extensive requise.</p>
+          </div>
+        </div>
+        <div class="faq-cta-box reveal">
+          <p>Vous n'avez pas trouvé votre réponse ?</p>
+          <a href="#" class="btn btn-primary" style="margin-top: 8px; display: inline-block;">Contactez notre
+            support</a>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- CTA AMÉLIORATION FINALE -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg">
+      <img src="https://images.pexels.com/photos/4057743/pexels-photo-4057743.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        alt="cacao" onerror="this.src='https://placehold.co/1920x600/0A0F0D/74C69D?text=ChainCacao'">
+      <div style="position:absolute;inset:0;background:rgba(10,15,13,.88)"></div>
+    </div>
+    <div class="cta-inner">
+      <h2>Prêt à transformer<br>votre café‑cacao ?</h2>
+      <p>Rejoignez des centaines de producteurs et d'acheteurs qui utilisent déjà ChainCacao pour sécuriser la
+        traçabilité, accélérer la vérification et faciliter la conformité EUDR.</p>
+      <div class="cta-btns">
+        <a href="#solution" class="btn btn-primary">Commencer maintenant</a>
+        <a href="#faq" class="btn btn-ghost">Demander une démo</a>
+      </div>
+      <div class="odds">
+        <div class="odd">+240 acteurs satisfaits</div>
+        <div class="odd">ODD 1 — Fin de la pauvreté</div>
+        <div class="odd">ODD 8 — Travail décent</div>
+        <div class="odd">ODD 12 — Consommation responsable</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <div class="logo-mark">CC</div>
+        <div class="logo-text">ChainCacao</div>
+      </a>
+      <div class="footer-right">
+        <p>ChainCacao · Plateforme de traçabilité café-cacao</p>
+        <p>Contact partenariat · <strong class="footer-contact">contact@chaincacao.tg</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
