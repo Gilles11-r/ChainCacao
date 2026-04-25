@@ -97,17 +97,28 @@ nav.scrolled {
   list-style: none
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
   text-decoration: none;
   color: rgba(255, 255, 255, .6);
   font-size: 13px;
   font-weight: 500;
-  padding: 6px 12px;
+  padding: 6px 15px;
   border-radius: 8px;
-  transition: all .2s
+  transition: all .2s;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1
 }
 
-.nav-links a:hover {
+.nav-lang {
+  margin-right: 10px
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
   color: #fff;
   background: rgba(255, 255, 255, .08)
 }
@@ -223,8 +234,8 @@ nav.scrolled {
 
 .hero h1 {
   font-family: var(--display-font);
-  font-size: clamp(38px, 5.5vw, 66px);
-  font-weight: 800;
+  font-size: clamp(40px, 5.8vw, 70px);
+  font-weight: 900;
   color: #fff;
   line-height: 1.06;
   letter-spacing: -.03em;
@@ -362,8 +373,8 @@ nav.scrolled {
 
 .s-title {
   font-family: var(--display-font);
-  font-size: clamp(28px, 4vw, 44px);
-  font-weight: 800;
+  font-size: clamp(30px, 4.2vw, 48px);
+  font-weight: 900;
   color: var(--dark);
   line-height: 1.1;
   letter-spacing: -.02em;
@@ -569,8 +580,8 @@ nav.scrolled {
 
 .prob-card h4 {
   font-family: var(--display-font);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 5px
 }
@@ -616,7 +627,8 @@ nav.scrolled {
 
 .full-img-text .s-title {
   color: #fff;
-  font-size: clamp(26px, 3.5vw, 40px)
+  font-size: clamp(28px, 3.8vw, 44px);
+  font-weight: 900
 }
 
 .full-img-text .s-sub {
@@ -681,8 +693,8 @@ nav.scrolled {
 
 .sol-card h3 {
   font-family: var(--display-font);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 8px
 }
@@ -1057,8 +1069,8 @@ nav.scrolled {
 
 .cert-title {
   font-family: var(--display-font);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: #fff
 }
 
@@ -1184,8 +1196,8 @@ nav.scrolled {
 
 .actor-card h3 {
   font-family: var(--display-font);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 8px
 }
@@ -1321,8 +1333,8 @@ nav.scrolled {
 
 .bc-reason h4 {
   font-family: var(--display-font);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 5px
 }
@@ -1360,8 +1372,8 @@ nav.scrolled {
 
 .bc-block-title {
   font-family: var(--display-font);
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
   color: var(--g2)
 }
 
@@ -1460,8 +1472,8 @@ nav.scrolled {
 
 .cta-section h2 {
   font-family: var(--display-font);
-  font-size: clamp(30px, 5vw, 54px);
-  font-weight: 800;
+  font-size: clamp(32px, 5.2vw, 58px);
+  font-weight: 900;
   color: #fff;
   letter-spacing: -.02em;
   margin-bottom: 18px
@@ -1690,8 +1702,8 @@ footer {
 
 .value-item h4 {
   font-family: var(--display-font);
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 6px;
 }
