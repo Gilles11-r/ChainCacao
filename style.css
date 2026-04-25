@@ -23,6 +23,7 @@
   --border: #D1E8D8;
   --white: #FFFFFF;
   --cream: #F7FAF8;
+  --display-font: 'Manrope', 'DM Sans', sans-serif;
 }
 
 html {
@@ -221,7 +222,7 @@ nav.scrolled {
 }
 
 .hero h1 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: clamp(38px, 5.5vw, 66px);
   font-weight: 800;
   color: #fff;
@@ -309,7 +310,7 @@ nav.scrolled {
 }
 
 .sstat-num {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 42px;
   font-weight: 800;
   color: #fff;
@@ -360,7 +361,7 @@ nav.scrolled {
 }
 
 .s-title {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 800;
   color: var(--dark);
@@ -567,7 +568,7 @@ nav.scrolled {
 }
 
 .prob-card h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 15px;
   font-weight: 700;
   color: var(--dark);
@@ -679,7 +680,7 @@ nav.scrolled {
 }
 
 .sol-card h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
@@ -772,7 +773,7 @@ nav.scrolled {
   border-radius: 50%;
   background: var(--g3);
   color: #fff;
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-weight: 700;
   font-size: 13px;
   display: grid;
@@ -949,7 +950,7 @@ nav.scrolled {
 }
 
 .testimony-text {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: clamp(20px, 3vw, 28px);
   font-weight: 600;
   color: #fff;
@@ -1055,7 +1056,7 @@ nav.scrolled {
 }
 
 .cert-title {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 16px;
   font-weight: 700;
   color: #fff
@@ -1091,7 +1092,7 @@ nav.scrolled {
 .cert-row-val {
   color: rgba(255, 255, 255, .85);
   font-weight: 500;
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 12px
 }
 
@@ -1182,7 +1183,7 @@ nav.scrolled {
 }
 
 .actor-card h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 15px;
   font-weight: 700;
   color: var(--dark);
@@ -1319,7 +1320,7 @@ nav.scrolled {
 }
 
 .bc-reason h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
@@ -1358,7 +1359,7 @@ nav.scrolled {
 }
 
 .bc-block-title {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 12px;
   font-weight: 700;
   color: var(--g2)
@@ -1458,7 +1459,7 @@ nav.scrolled {
 }
 
 .cta-section h2 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: clamp(30px, 5vw, 54px);
   font-weight: 800;
   color: #fff;
@@ -1665,6 +1666,7 @@ footer {
 .value-list {
   display: flex;
   flex-direction: column;
+  font-family: var(--display-font);
   gap: 24px;
 }
 
@@ -1687,7 +1689,7 @@ footer {
 }
 
 .value-item h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--display-font);
   font-size: 16px;
   font-weight: 700;
   color: var(--dark);
